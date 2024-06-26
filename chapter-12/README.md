@@ -26,3 +26,9 @@ assert majority_vote(['a', 'b', 'c', 'b', 'a']) == 'b'
 ```
 
 We have to be careful when selecting k. If k is too small, the model will be too sensitive to noise in the training data. If k is too large, the model will fail to capture the complexity of the data. Usually, we use cross-validation to select the best k.
+
+The k-nearest neighbors algorithm runs into trouble in higher dimensions thanks to the “curse of dimensionality,” which boils down to the fact that high-dimensional spaces are vast. Points in high-dimensional spaces tend not to be close to one another at all.
+
+![alt text](image.png)
+
+As the number of dimensions increases, the average distance between points increases. But what’s more problematic is the ratio between the closest distance and the average distance
